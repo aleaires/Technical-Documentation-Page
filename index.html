@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <nav id="navbar">
+    <header id='navheader'>JS Documentation</header>
+      <p class="nav-link"><a href="#Introduction">Introduction<a></p><hr>
+      <p class="nav-link"><a href="#What_you_should_already_know">What you should already know<a></p><hr>
+      <p class="nav-link"><a href="#JavaScript_and_Java">JavaScript and Java<a></p><hr>
+      <p class="nav-link"><a href="#Hello_world!">Hello world!<a></p><hr>
+      <p class="nav-link"><a href="#Variables">Variables<a></p><hr>
+      <p class="nav-link"><a href="#if_else_statement">if...else statement</p><hr>
+      <p class="nav-link"><a href="#while_statement">while statement<a></p><hr>
+      <p class="nav-link"><a href="#Function_declarations">Function declarations<a></p><hr>
+      <p class="nav-link"><a href="#Reference">Reference<a></p><hr>
+        </header>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section">
+      <header class="header-section" id="Introduction">Introduction</header>
+      <articule>
+        <p style="margin-left:40px;">JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+
+        <p style="margin-left:40px;">JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+        
+        <ul style="margin-left:50px;">
+          <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li><br>
+          <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+        </ul>
+      </articule>
+    </section>
+    <section class="main-section">
+      <header class="header-section" id="What_you_should_already_know">What you should already know</header>
+      <articule>
+        <p style="margin-left:40px;">This guide assumes you have the following basic background:</p>
+        <ul style="margin-left:50px;">
+          <li>A general understanding of the Internet and the World Wide Web (WWW).</li><br>
+          <li>Good working knowledge of HyperText Markup Language (HTML).</li><br>
+          <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li><br>
+        </ul>
+      </articule>
+    </section>
+    <section class="main-section">
+      <header class="header-section" id="JavaScript_and_Java">JavaScript and Java</header>
+      <articule>
+        <p style="margin-left:40px;">JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+
+        <p style="margin-left:40px;">In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+        
+        <p style="margin-left:40px;">JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+      </articule>
+    </section>
+    <section class="main-section">
+      <header class="header-section" id="Hello_world!">Hello world!</header>
+      <articule>
+        <p style="margin-left:40px;">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+        
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+        </code>
+
+
+        <p style="margin-left:40px;">JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+        
+      </articule>
+    </section>
+    <section class="main-section">
+      <header class="header-section" id="Variables">Variables</header>
+      <articule>
+        
+        <p style="margin-left:40px;">You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+        
+        <p style="margin-left:40px;">A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+        
+        <p style="margin-left:40px;">You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+        
+      </articule>
+    </section>
+    <section class="main-section">
+      <header class="header-section" id="if_else_statement">if...else statement</header>
+      <articule>
+        <p style="margin-left:40px;">Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+        
+        <code>if (condition) { statement_1; } else { statement_2; }</code>
+
+        <p style="margin-left:40px;">condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
+        
+        <p style="margin-left:40px;">You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
+        
+        <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+} else if (condition_n) { statement_n; } else { statement_last; }</code>
+        
+        <p style="margin-left:40px;">In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
+        
+        <code>if (condition) { statement_1_runs_if_condition_is_true;
+statement_2_runs_if_condition_is_true; } else {
+statement_3_runs_if_condition_is_false;
+statement_4_runs_if_condition_is_false; }</code>
+        
+        <p style="margin-left:40px;">It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
+        
+        <code>if (x = y) { /* statements here */ }</code>
+        
+        <p style="margin-left:40px;">If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
+        
+        <code>if ((x = y)) { /* statements here */ }</code>
+        
+      </articule>
+    </section>
+    <section class="main-section">
+      <header class="header-section" id="while_statement">while statement</header>
+      <articule>
+        <p style="margin-left:40px;">A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+        
+        <code>while (condition) statement</code>
+
+        <p style="margin-left:40px;">If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.</p>
+        
+        <p style="margin-left:40px;">The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.</p>
+        
+        <p style="margin-left:40px;">To execute multiple statements, use a block statement ({ ... }) to group those statements.</p>
+        
+        <p style="margin-left:40px;">Example:</p>
+        
+        <p style="margin-left:40px;">The following while loop iterates as long as n is less than three:</p>
+        
+        <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
+          
+        <p style="margin-left:40px;">With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:</p>
+          
+        <ul style="margin-left:50px;">
+          <li>After the first pass: n = 1 and x = 1</li><br>
+          <li>After the second pass: n = 2 and x = 3</li><br>
+          <li>After the third pass: n = 3 and x = 6</li><br>
+        </ul>
+          
+          <p style="margin-left:40px;">After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
+          
+      </articule>
+    </section>
+    <section class="main-section">
+      <header class="header-section" id="Function_declarations">Function declarations</header>
+      <articule>
+        <p style="margin-left:40px;">A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+        
+        <ul style="margin-left:50px;">
+          <li>The name of the function.</li><br>
+          <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li><br>
+          <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li><br>
+        </ul>
+        
+        <p style="margin-left:40px;">For example, the following code defines a simple function named square:</p>
+
+        <code>function square(number) { return number * number; }</code>
+        
+        <p style="margin-left:40px;">Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>    
+        
+        <code>return number * number;</code>
+        
+        <p style="margin-left:40px;">Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>   
+                
+      </articule>
+    </section> 
+    <section class="main-section">
+      <header class="header-section" id="Reference">Reference</header>
+      <articule>
+        <ul style="margin-left:50px;">
+          <li>All the documentation in this page is taken from<a href="#" style="color:blue;"><u>MDN</u></a></li>
+        </ul>
+      </articule>
+    </section>
+  </main>
+</body>
+
+</html>
